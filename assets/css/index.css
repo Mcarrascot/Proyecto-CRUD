@@ -3,3 +3,19 @@
     font-size: 1.25rem;
     background-color: #f6f8fa;
   }
+
+  #header{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+    .logo{
+      background-image: url(../images/rentflix.png);
+      background-size: cover;
+      height: 160px;
+      width: 350px;
+    }
+  }
