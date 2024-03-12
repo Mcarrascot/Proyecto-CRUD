@@ -46,6 +46,76 @@
             </table>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addMovieModal" tabindex="-1" role="dialog" aria-labelledby="addMovieModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addMovieModalLabel">Agregar película</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="movieForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required
+                                oninvalid="this.setCustomValidity('Este campo es necesario')"
+                                oninput="setCustomValidity('')">
+                        </div>
+                        <div class="form-group">
+                            <label for="genero">Género</label>
+                            <select class="form-control" id="genero" required multiple
+                                oninvalid="this.setCustomValidity('Este campo es necesario')"
+                                oninput="setCustomValidity('')">
+                                <option value="Terror">Terror</option>
+                                <option value="Acción">Acción</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Comedia">Comedia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="clasificacion">Clasificación:</label>
+                            <select class="form-control" id="clasificacion" required
+                                oninvalid="this.setCustomValidity('Este campo es necesario')"
+                                oninput="setCustomValidity('')">
+                                <option value="G">G</option>
+                                <option value="PG">PG</option>
+                                <option value="PG-13">PG-13</option>
+                                <option value="R">R</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cantidad">Cantidad:</label>
+                            <input type="number" min="0" class="form-control" id="cantidad" required
+                                oninvalid="this.setCustomValidity('Este campo es necesario')"
+                                oninput="setCustomValidity('')">
+                        </div>
+                        <div class="form-group">
+                            <label for="precio">Precio:</label>
+                            <div>
+                                <span style="position: absolute; margin-left: 4px; margin-top: 7px;">$</span>
+                                <input type="number" min="0" step="any" class="form-control" id="precio" required
+                                    oninvalid="this.setCustomValidity('Este campo es necesario')"
+                                    oninput="setCustomValidity('')">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="createMovieButton" form="movieForm">Crear</button>
+                    <button type="button" class="btn btn-primary" id="updateMovieButton"
+                        form="movieForm">Actualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal -->
+
     <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="container">
