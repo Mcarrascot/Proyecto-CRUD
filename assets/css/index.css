@@ -3,7 +3,11 @@
     font-size: 1.25rem;
     background-color: #f6f8fa;
   }
-
+  
+  td {
+    line-height: 3rem;
+  }
+  
   #header{
     height: 300px;
     width: 100%;
@@ -19,6 +23,42 @@
       width: 350px;
     }
   }
+
+.form-group{
+  padding-bottom: 8px;
+  label{
+    font-weight: 500;
+    padding-bottom: 4px;
+  }
+}
+
+/* Tabla */
+
+#inventario{
+h2{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.button-row {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+}
+#add-movie-btn {
+  background-color: #760240;
+  color: aliceblue;
+  border-radius: 6px;
+}
+table{
+  margin-bottom: 60px;
+
+  th{
+    vertical-align: middle;
+  }
+}
+}
+/*Fin Tabla */
 
 
 /* Footer */
