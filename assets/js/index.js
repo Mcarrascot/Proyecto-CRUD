@@ -135,8 +135,8 @@ function loadTable() {
           <tr>
               <th scope="row">${index + 1}</th>
               <td>${movie.nombre}</td>
-              <td>${movie.clasificacion}</td>
-              <td>${movie.cantidad}</td>
+              <td class="d-none d-md-table-cell">${movie.clasificacion}</td>
+              <td class="d-none d-md-table-cell">${movie.cantidad}</td>
               <td>$${movie.precio}</td>
               <td>
                   <button type="button" class="btn btn-outline-primary" onclick="editMovie(${index})"><i class="fas fa-edit"></i></button>
