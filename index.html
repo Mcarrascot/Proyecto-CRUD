@@ -18,6 +18,34 @@
         <div class="logo"></div>
     </section>
     <!--Fin Header-->
+
+    <section id="inventario">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Inventario</h2>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end button-row">
+                    <button type="button" id="add-movie-btn" data-toggle="modal" data-target="#addMovieModal">
+                        Añadir película
+                    </button>
+                </div>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Clasificación</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="movieTableBody"></tbody>
+            </table>
+        </div>
+    </section>
     <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="container">
